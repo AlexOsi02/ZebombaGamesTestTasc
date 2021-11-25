@@ -1,0 +1,382 @@
+.container{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 1340px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    }
+.bg{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.sky{
+    position: relative;
+    width: 100%;
+    z-index: -10;
+}
+.sky img{
+    width: 100%;
+}
+.vesuvius{
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+    width: 100%;
+}
+.vesuvius img{
+    width: 100%;
+}
+.hills{
+    position: absolute;
+    bottom: 26px;
+    z-index: -10;
+    width: 100%;
+}
+.hills img{
+    width: 100%;
+}
+.ground{
+    margin-top: -85px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+.green{
+    position: absolute;
+    z-index: 14;
+    bottom: 90px;
+    right: 77px;
+}
+.bush{
+    position: absolute;
+    right: 0;
+    bottom: 250px;
+    z-index: 4;
+}
+.bush_md{
+    position: absolute;
+    left: 46%;
+    bottom: 235px;
+    z-index: 4;
+}
+.tree{
+    position: absolute;
+    bottom: 221px;
+    z-index: 4;
+}
+.clouds{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.clouds div:nth-child(1){
+    position: absolute;
+    left: 193px;
+    top: 30px;
+    animation: animCloud 120s infinite linear
+}
+.clouds div:nth-child(2){
+    position: absolute;
+    top: 57px;
+    right: 0;
+    animation: animCloud 120s infinite linear
+}
+.clouds div:nth-child(3){
+    position: absolute;
+    top: 110px;
+    left: 646px;
+    animation: animCloud 120s infinite linear
+}
+.clouds div:nth-child(4){
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    width: 185px;
+    opacity: 0.5;
+    animation: animCloud 120s infinite linear
+}
+.clouds div:nth-child(5){
+    position: absolute;
+    top: 176px;
+    left: 600px;
+    width: 68px;
+    opacity: 0.5;
+    animation: animCloud 120s infinite linear
+}
+.clouds div:nth-child(6){
+    position: absolute;
+    top: 175px;
+    right: 200px;
+    width: 110px;
+    opacity: 0.5;
+    animation: animCloud 120s infinite linear
+}
+.clouds div:nth-child(7){
+    position: absolute;
+    top: 194px;
+    right: 33%;
+    width: 68px;
+    opacity: 0.5;
+    animation: animCloud 120s infinite linear
+}
+.clouds div:nth-child(8){
+    position: absolute;
+    top: 202px;
+    right: 24%;
+    width: 120px;
+    opacity: 0.5;
+    animation: animCloud 120s infinite linear
+}
+@keyframes animCloud {
+    0%{
+        transform: translateX(100%)
+      }
+      50%{
+        transform: translateX(-100%)
+      }
+      100%{
+        transform: translateX(100%)
+      }
+}
+.road{
+    position: absolute;
+    width: 75%;
+    top: 0px;
+}
+.road img{
+    width: 100%;
+}
+.buildings{
+    position: absolute;
+    top: 8px;
+    z-index: 1;
+    width: 100%;
+}
+.buildings img{
+    position: relative;
+    width: 100%;
+    margin-top: -175px;
+}
+.water img{
+    position: absolute;
+    top: 0px;
+    left: 45%;
+    width: 55%;
+}
+.bubl{
+    height: 100%;
+    position: absolute;
+    top: 98px;
+    right: 302px;
+    height: 2%;
+    width: 4%;
+    z-index: 20;
+}
+.bubl img{
+    position: absolute;
+    top: 0;
+}
+.bubl1{
+    animation: pulsing__start 2s infinite;
+}
+.bubl2{
+    animation: pulsing__start 6s infinite;
+}
+.bubl3{
+    animation: pulsing__start 10s infinite;
+}
+@keyframes pulsing__start{
+    0%{
+      opacity: 0;
+    }
+    50%{
+       opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+.window{
+    position: absolute;
+    top: -24px;
+    left: 393px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 15;
+}
+.window img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+.window::after{
+    content: "";
+    position: absolute; 
+    top: 0; 
+    left: 14.8vw; 
+    width: 2em; 
+    height: 100%; 
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(-0.5em) skewX(-45deg);    
+    animation: movingFlare 7s ease-in-out 0.05s infinite;
+}
+@keyframes movingFlare {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+}
+.trail{
+    position: absolute;
+    top: 137px;
+    width: 100%;
+    z-index: 5;
+}
+.trail img{
+    max-width: 100%;
+}
+.friends{
+    width: 92%;
+    position: absolute;
+    top: -65px;
+    left: 10px;
+    z-index: 10;
+}
+.friend{
+    width: 55px;
+    position: absolute;
+    top: -127px;
+    left: 48%;
+    z-index: 10;
+}
+.friend__block{
+    position: absolute;
+    top: 50px;
+    z-index: 15;
+    animation: spin 2s infinite linear;
+}
+.friend__platform{
+    position: absolute;
+    top: 90px;
+}
+ 
+@keyframes spin {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.bumblebee{
+    position: absolute;
+    top: 85px;
+    z-index: 15;
+    left: 60%;
+}
+.wing_rigth{
+    position: absolute;
+    z-index: -1;
+    top: -11px;
+    left: 7px;
+    transform: rotate(50deg);
+    transform-origin: bottom  left;
+    transform-box: fill-box;
+    animation:rotateBox1 0.8s linear infinite;
+}
+.wing_left{
+    position: absolute;
+    top: -4px;
+    left: -9px;
+    transform: rotate(-40deg);
+    transform-origin: bottom  right;
+    transform-box: fill-box;
+    animation:rotateBox2 0.8s linear infinite;
+}
+@keyframes rotateBox1 {
+    0%{ transform:rotate(50deg); }
+    50%{ transform:rotate(10deg); }
+    0%{ transform:rotate(50deg); }
+}
+@keyframes rotateBox2 {
+    0%{ transform:rotate(-40deg); }
+    50%{ transform:rotate(0deg); }
+    0%{ transform:rotate(-40deg); }
+}
+.flag{
+    position:absolute;
+    top: -187px;
+    left: 428px;
+    z-index: 15;
+    animation: 2.4s wave .5s infinite;
+    transform-origin: left;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: skew(0);
+      }
+    50% {
+        transform: skew(0, 15deg);
+    }
+}
+.squirrel{
+    position: absolute;
+    top: 43px;
+    left: 208px;
+    z-index: 15;
+}
+.eye{
+    position: absolute;
+    top: 11px;
+    left: 9px;
+    opacity: 0.0;
+    animation-name: blinker;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    animation-duration: 1.5s;
+}
+@keyframes blinker {
+    from { opacity: 0.0; }
+    to { opacity: 1.0; }
+}
+.body{
+    position: absolute;
+    z-index: -1;
+    top: 19px;
+    left: -29px;
+}
+.tail{
+    position: absolute;
+    top: -4px;
+    left: -56px;
+    z-index: -2;
+    animation: rotate 3s linear infinite;
+    transform-origin: right;
+}
+@keyframes rotate{
+    0%{ transform:rotate(0deg); }
+    50%{ transform:rotate(-10deg); }
+    0%{ transform:rotate(0deg); }
+}
+.paws{
+    position:absolute;
+    top: 22px;
+    left: -5px;
+    animation: rotate 3s linear infinite;
+}
+.ears{
+    position:absolute;
+    top: -6px;
+    left: 0;
+    animation: rotate 3s linear infinite;
+}
